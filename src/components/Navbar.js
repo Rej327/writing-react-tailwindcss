@@ -30,16 +30,16 @@ const Navbar = () => {
         <h1 className="my-6 w-full text-2xl font-medium text-white">
           React Writing
         </h1>
-        <li className="border-b border-b-gray-600 text-gray-400 font-light py-4 hover:scale-105 duration-500 hover:text-white hover:border-b-white cursor-pointer">
+        <li className="border-b border-b-gray-600 text-gray-400 font-light py-4 hover:scale-105 duration-500 hover:text-white hover:border-b-white hover:font-bold cursor-pointer">
           Home
         </li>
-        <li className="border-b border-b-gray-600 text-gray-400 font-light py-4 hover:scale-105 duration-500 hover:text-white hover:border-b-white cursor-pointer">
+        <li className="border-b border-b-gray-600 text-gray-400 font-light py-4 hover:scale-105 duration-500 hover:text-white hover:border-b-white hover:font-bold cursor-pointer">
           Portfolio
         </li>
-        <li className="border-b border-b-gray-600 text-gray-400 font-light py-4 hover:scale-105 duration-500 hover:text-white hover:border-b-white cursor-pointer">
+        <li className="border-b border-b-gray-600 text-gray-400 font-light py-4 hover:scale-105 duration-500 hover:text-white hover:border-b-white hover:font-bold cursor-pointer">
           About
         </li>
-        <li className="border-b border-b-gray-600 text-gray-400 font-light py-4 hover:scale-105 duration-500 hover:text-white hover:border-b-white cursor-pointer">
+        <li className="border-b border-b-gray-600 text-gray-400 font-light py-4 hover:scale-105 duration-500 hover:text-white hover:border-b-white hover:font-bold cursor-pointer">
           Contact
         </li>
       </ul>
