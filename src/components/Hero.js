@@ -9,9 +9,21 @@ const Hero = () => {
         <h1>From seed to bloom.</h1>
         <div>
           <p>Start with the Fundamentals of </p>
-          <Typed />
+          <Typed
+            strings={["HTML", "CSS", "JAVASCRIPT"]}
+            typeSpeed={60}
+            backSpeed={40}
+            loop
+          />
+        </div>
+        <div>
           <p>Improving by using </p>
-          <Typed />
+          <Typed
+            strings={["REACT", "TAILWIND-CSS"]}
+            typeSpeed={60}
+            backSpeed={40}
+            loop
+          />
         </div>
         <p>I currently studying programming in almost 2months</p>
         <button>Info</button>
