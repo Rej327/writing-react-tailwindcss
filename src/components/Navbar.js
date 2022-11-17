@@ -9,15 +9,25 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-black">
-      <h1 className="w-full text-2xl font-bold text-black">React Styling</h1>
+    <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
+      <h1 className="w-full text-2xl font-bold text-white font-mono">
+        React Styling
+      </h1>
       <ul className="hidden md:flex">
-        <li className="p-4 text-1xl font-mono">Home</li>
-        <li className="p-4 text-1xl font-mono">Portfolio</li>
-        <li className="p-4 text-1xl font-mono">About</li>
-        <li className="p-4 text-1xl font-mono">Contact</li>
+        <li className="p-4 text-1xl font-mono cursor-pointer hover:text-green-400 hover:scale-105 duration-500">
+          Home
+        </li>
+        <li className="p-4 text-1xl font-mono cursor-pointer hover:text-green-400 hover:scale-105 duration-500">
+          Portfolio
+        </li>
+        <li className="p-4 text-1xl font-mono cursor-pointer hover:text-green-400 hover:scale-105 duration-500">
+          About
+        </li>
+        <li className="p-4 text-1xl font-mono cursor-pointer hover:text-green-400 hover:scale-105 duration-500">
+          Contact
+        </li>
       </ul>
-      <div onClick={handleNav} className="block md:hidden">
+      <div onClick={handleNav} className="block cursor-pointer md:hidden">
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
       <ul
