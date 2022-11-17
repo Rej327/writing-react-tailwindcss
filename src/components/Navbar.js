@@ -10,20 +10,20 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
-      <h1 className="w-full text-2xl font-bold text-white font-mono">
+      <h1 className="w-full text-2xl font-bold text-[#00df9a] font-mono">
         React Styling
       </h1>
       <ul className="hidden md:flex">
-        <li className="p-4 text-1xl font-mono cursor-pointer hover:text-green-400 hover:scale-105 duration-500">
+        <li className="p-4 text-1xl font-mono cursor-pointer hover:text-[#00df9a] hover:scale-105 duration-500">
           Home
         </li>
-        <li className="p-4 text-1xl font-mono cursor-pointer hover:text-green-400 hover:scale-105 duration-500">
+        <li className="p-4 text-1xl font-mono cursor-pointer hover:text-[#00df9a] hover:scale-105 duration-500">
           Portfolio
         </li>
-        <li className="p-4 text-1xl font-mono cursor-pointer hover:text-green-400 hover:scale-105 duration-500">
+        <li className="p-4 text-1xl font-mono cursor-pointer hover:text-[#00df9a] hover:scale-105 duration-500">
           About
         </li>
-        <li className="p-4 text-1xl font-mono cursor-pointer hover:text-green-400 hover:scale-105 duration-500">
+        <li className="p-4 text-1xl font-mono cursor-pointer hover:text-[#00df9a] hover:scale-105 duration-500">
           Contact
         </li>
       </ul>
@@ -33,7 +33,7 @@ const Navbar = () => {
       <ul
         className={
           nav
-            ? "fixed left-0 top-0 w-[60%] h-full border-r border-r-black bg-black ease-in-out duration-500 p-4"
+            ? "z-[1000] fixed left-0 top-0 w-[60%] h-full border-r border-r-black bg-black ease-in-out duration-500 p-4"
             : "ease-in-out duration-500 fixed left-[-100%]"
         }
       >
