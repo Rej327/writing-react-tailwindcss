@@ -4,7 +4,7 @@ import Typed from "react-typed";
 const Hero = () => {
   return (
     <div className="text-white">
-      <div className="max-w-[800px] mt-[1px] w-full h-screen mx-auto text-center felx flex-col justify-center">
+      <div className="max-w-[800px] my-[30px] md:mt-[1px] w-full md:h-fit mx-auto text-center felx flex-col justify-center">
         <p className="text-[#00df9a] font-bold p-2">PROGRESS IN PROGRAMMING</p>
         <h2 className="text-4xl font-bold sm:text-6xl sm:py-4 md:text-7xl md:py-6">
           From seed to bloom
@@ -33,10 +33,10 @@ const Hero = () => {
             loop
           />
         </div>
-        <p className=" text-sm font-light p-4 md:text-4xl">
+        <p className="text-gray-500 text-1xl font-bold p-4 md:text-3xl sm:text-2xl">
           I currently studying programming in almost 2 months
         </p>
-        <button className="bg-[#00df9a] w-[200px] rounded-md font-medium my-2 mx-auto py-3 text-black font-5xl sm:text-2xl md:text-3xl hover:text-white hover:scale-105 duration-500">
+        <button className="bg-[#00df9a] w-[200px] rounded-md font-medium my-2 mx-auto py-3 text-black font-2xl hover:text-white duration-500">
           Info
         </button>
       </div>
