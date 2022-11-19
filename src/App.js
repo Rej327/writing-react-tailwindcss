@@ -3,7 +3,8 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Analytics from "./components/Analytics";
-import Cards from "./components/Cards"
+import Cards from "./components/Cards";
+import Newsletter from "./components/Newsletter";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
           <Route path="/" element={<Hero />} />
         </Routes>
         <Analytics />
-       <Cards />
+        <Newsletter />
+        <Cards />
       </div>
     </BrowserRouter>
   );
