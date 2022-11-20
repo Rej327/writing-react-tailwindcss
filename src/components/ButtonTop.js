@@ -20,8 +20,8 @@ const ButtonTop = () => {
           onClick={() => {
             window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
           }}
-          className={`z-100 bottom-8 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-[#00df9a] text-white text-3xl font-bold ${
-            scrollPosition >= 700 ? "fixed" : "hidden"
+          className={`z-100 fixed bottom-8 right-8 border-0 w-16 h-16 rounded-full drop-shadow-md bg-[#00df9a] text-white text-3xl font-bold ease-in-out hover:shadow-xl hover:-translate-y-2 duration-500 ${
+            scrollPosition >= 700 ? "right-8" : "right-[-50%]"
           }`}
         >
           &uarr;
