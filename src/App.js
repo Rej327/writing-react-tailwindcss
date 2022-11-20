@@ -6,15 +6,18 @@ import Analytics from "./components/Analytics";
 import Cards from "./components/Cards";
 import Newsletter from "./components/Newsletter";
 import Footer from "./components/Footer";
+import ButtonTop from "./components/ButtonTop";
 
 function App() {
   return (
     <BrowserRouter>
       <div>
+        <ButtonTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<Hero />} />
         </Routes>
+
         <Analytics />
         <Newsletter />
         <Cards />
