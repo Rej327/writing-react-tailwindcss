@@ -17,7 +17,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Hero />} />
         </Routes>
-
         <Analytics />
         <Newsletter />
         <Cards />

@@ -1,7 +1,5 @@
 import React from "react";
-import Single from "../assets/single.png";
-import Double from "../assets/double.png";
-import Triple from "../assets/triple.png";
+import { Single, Double, Triple } from "../assets";
 
 const Cards = () => {
   return (
@@ -26,11 +24,7 @@ const Cards = () => {
         </div>
 
         <div className="w-full shadow-xl md:bg-gray-100 flex flex-col p-4 my-4 rounded-lg hover:md:scale-105 duration-300 cursor-pointer">
-          <img
-            src={Double}
-            alt="/"
-            className="w-20 mx-auto my-[-3px] bg-white"
-          />
+          <img src={Double} alt="/" className="w-20 mx-auto my-[-3px]" />
           <h2 className="text-2xl py-8 font-bold text-center">Partnership</h2>
           <p className="text-center font-bold text-4xl">$149</p>
           <div className="text-center font-medium">

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import { styles } from "../constant/Global-style";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -11,24 +12,14 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
-      <h1 className="w-full text-2xl font-bold text-[#00df9a] font-mono">
-        React Styling
-      </h1>
+      <h1 className={styles.HEAD}>React Styling</h1>
       <ul className="hidden md:flex">
         <Link to="/">
-          <li className="p-4 text-1xl font-mono cursor-pointer hover:text-[#00df9a] hover:scale-105 duration-500">
-            Home
-          </li>
+          <li className={styles.LIST}>Home</li>
         </Link>
-        <li className="p-4 text-1xl font-mono cursor-pointer hover:text-[#00df9a] hover:scale-105 duration-500">
-          Portfolio
-        </li>
-        <li className="p-4 text-1xl font-mono cursor-pointer hover:text-[#00df9a] hover:scale-105 duration-500">
-          About
-        </li>
-        <li className="p-4 text-1xl font-mono cursor-pointer hover:text-[#00df9a] hover:scale-105 duration-500">
-          Contact
-        </li>
+        <li className={styles.LIST}>Portfolio</li>
+        <li className={styles.LIST}>About</li>
+        <li className={styles.LIST}>Contact</li>
       </ul>
       <div onClick={handleNav} className="block cursor-pointer md:hidden">
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
