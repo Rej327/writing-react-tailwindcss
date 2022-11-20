@@ -2,27 +2,6 @@ import React from "react";
 import { useEffect, useState } from "react";
 
 const ButtonTop = () => {
-  // useEffect(() => {
-  //   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  // }, []);
-
-  // const [showButton, setShowButton] = useState(false);
-  // // const go = window.pageYOffset;
-  // // console.log(go);
-
-  // const go = function () {
-  //   let goes = window.addEventListener("scroll", function () {});
-  //   console.log(goes);
-  // };
-
-  // useEffect(() => {
-  //   window.addEventListener("scroll", handleScroll, { passive: true });
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
-
   const [scrollPosition, setScrollPosition] = useState(0);
   const handleScroll = () => {
     const position = window.pageYOffset;
