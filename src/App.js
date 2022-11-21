@@ -1,13 +1,11 @@
 import React from "react";
-import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Analytics from "./components/Analytics";
-import Cards from "./components/Cards";
-import Newsletter from "./components/Newsletter";
+
 import Footer from "./components/Footer";
 import ButtonTop from "./components/ButtonTop";
-import ProductCard from "./components/Product";
+import Product from "./components/Product";
+import Home from "./pages/Home";
 
 function App() {
   return (
@@ -16,14 +14,10 @@ function App() {
         <ButtonTop />
         <Navbar />
         <Routes>
-          <Route path="/" element={<Hero />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/product" element={<Product />} />
         </Routes>
-        <Routes>
-          <Route path="/product" element={<ProductCard />} />
-        </Routes>
-        <Analytics />
-        <Newsletter />
-        <Cards />
+
         <Footer />
       </div>
     </BrowserRouter>
