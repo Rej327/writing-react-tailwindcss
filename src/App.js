@@ -7,6 +7,7 @@ import Cards from "./components/Cards";
 import Newsletter from "./components/Newsletter";
 import Footer from "./components/Footer";
 import ButtonTop from "./components/ButtonTop";
+import ProductCard from "./components/Product";
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Hero />} />
+        </Routes>
+        <Routes>
+          <Route path="/product" element={<ProductCard />} />
         </Routes>
         <Analytics />
         <Newsletter />

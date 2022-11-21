@@ -18,7 +18,9 @@ const Navbar = () => {
         <Link to="/">
           <li className={styles.LIST}>Home</li>
         </Link>
-        <li className={styles.LIST}>Portfolio</li>
+        <Link to="/product">
+          <li className={styles.LIST}>Data</li>
+        </Link>
         <li className={styles.LIST}>About</li>
         <li className={styles.LIST}>Contact</li>
       </ul>
@@ -27,8 +29,12 @@ const Navbar = () => {
       </div>
       <ul className={nav ? toggleStyle.NAVTOOGLE : toggleStyle.NAVTOOGLEOUT}>
         <h1 className={styles.MHEAD}>React Writing</h1>
-        <li className={styles.MLIST}>Home</li>
-        <li className={styles.MLIST}>Portfolio</li>
+        <Link to="/">
+          <li className={styles.LIST}>Home</li>
+        </Link>
+        <Link to="/product">
+          <li className={styles.MLIST}>Data</li>
+        </Link>
         <li className={styles.MLIST}>About</li>
         <li className={styles.MLIST}>Contact</li>
       </ul>
