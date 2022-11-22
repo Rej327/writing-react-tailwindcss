@@ -30,13 +30,21 @@ const Navbar = () => {
       <ul className={nav ? toggleStyle.NAVTOOGLE : toggleStyle.NAVTOOGLEOUT}>
         <h1 className={styles.MHEAD}>React Writing</h1>
         <Link to="/">
-          <li className={styles.LIST}>Home</li>
+          <li className={styles.MLIST} onClick={handleNav}>
+            Home
+          </li>
         </Link>
         <Link to="/product">
-          <li className={styles.MLIST}>Data</li>
+          <li className={styles.MLIST} onClick={handleNav}>
+            Data
+          </li>
         </Link>
-        <li className={styles.MLIST}>About</li>
-        <li className={styles.MLIST}>Contact</li>
+        <li className={styles.MLIST} onClick={handleNav}>
+          About
+        </li>
+        <li className={styles.MLIST} onClick={handleNav}>
+          Contact
+        </li>
       </ul>
     </div>
   );

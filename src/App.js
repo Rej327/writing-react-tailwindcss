@@ -1,10 +1,9 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import Footer from "./components/Footer";
 import ButtonTop from "./components/ButtonTop";
-import Product from "./components/Product";
+import PostList from "./components/PostList";
 import Home from "./pages/Home";
 
 function App() {
@@ -15,9 +14,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/product" element={<Product />} />
+          <Route path="/product" element={<PostList />} />
         </Routes>
-
         <Footer />
       </div>
     </BrowserRouter>
